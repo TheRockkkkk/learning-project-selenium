@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" parallel="none">
+  <test name="Create New Crop(failed)(failed)" parallel="none">
+    <classes>
+      <class name="com.itradefreight.testcases.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.itradefreight.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Create New Crop(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="9133" started-at="2021-03-20T14:57:43Z" finished-at="2021-03-20T14:57:52Z">
+    <groups>
+    </groups>
+    <test name="Login on chrome" duration-ms="9133" started-at="2021-03-20T14:57:43Z" finished-at="2021-03-20T14:57:52Z">
+      <class name="com.itrace.testcases.LoginTest">
+        <test-method status="PASS" signature="getPropertiesFile()[pri:0, instance:com.itrace.testcases.LoginTest@370736d9]" name="getPropertiesFile" is-config="true" duration-ms="12" started-at="2021-03-20T14:57:43Z" finished-at="2021-03-20T14:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPropertiesFile -->
+        <test-method status="PASS" signature="setupBrowser(java.lang.String)[pri:0, instance:com.itrace.testcases.LoginTest@370736d9]" name="setupBrowser" is-config="true" duration-ms="1748" started-at="2021-03-20T14:57:43Z" finished-at="2021-03-20T14:57:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.itrace.testcases.LoginTest@370736d9]" name="loginTest" duration-ms="7364" started-at="2021-03-20T14:57:44Z" description="sample test for login" finished-at="2021-03-20T14:57:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.itrace.testcases.LoginTest@370736d9]" name="closeDriver" is-config="true" duration-ms="76" started-at="2021-03-20T14:57:52Z" finished-at="2021-03-20T14:57:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.itrace.testcases.LoginTest -->
+    </test> <!-- Login on chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
