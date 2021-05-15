@@ -1,25 +1,41 @@
 package com.itrace.testcases;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.itrace.base.TestBase;
-import com.itrace.pages.CropPage;
-import com.itrace.pages.LoginPage;
+import com.itrace.pages.AddCropPage;
+import com.itrace.util.GenericMethods;
+
 
 public class CropTest extends TestBase{
 
-	CropPage createCrop;
-
+	//public static WebDriver driver = LocalDriverManager.getDriver();
 	
-	@Test
-	public void addCrop() throws InterruptedException {	
-		//Thread.sleep(4000);
-		//driver.manage().timeouts().implicitlyWait(6000, TimeUnit.SECONDS);
-		createCrop = PageFactory.initElements(driver, CropPage.class);
-		createCrop.addNewCrop();
+	
+
+	@Test()
+	public void addCrop() throws Exception{
+		AddCropPage cropPage = new AddCropPage();
+
+		try {	
+			log.debug("Inside Crop Test");
+			LoginTest.loginTest();
+			//GenericMethods.captureScreenshot(driver, "abv");
+			cropPage.addCrop();
+			Thread.sleep(2000);
+			log.debug("Crop created successfully");
+			//cropPage.editCrop();
+
+		} catch (Exception e) {
+			GenericMethods.captureScreenshot();
+			//TakesScreenshot screenshot = (TakesScreenshot)driver;
+			//FileHandler.copy(screenshot.getScreenshotAs(OutputType.FILE), new File("/home/hiteshy/workspace/PageObjectModel/Screenshots/hitesh.png"));
+			e.printStackTrace();
+			Assert.fail();
+		}
 	}
 	
 	
+		
 }

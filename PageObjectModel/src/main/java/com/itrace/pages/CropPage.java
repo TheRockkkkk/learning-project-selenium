@@ -24,7 +24,7 @@ public class CropPage extends TestBase {
 		WebElement cropLink;
 		
 		public CropPage(){
-			PageFactory.initElements(driver, this);
+		//	PageFactory.initElements(driver, this);
 		}
 		
 		/*public WebElement settingsBtn(){

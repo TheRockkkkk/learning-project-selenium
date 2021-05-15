@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.itrace.testcases.LoginTest">
+      <class name="com.itrace.parallelexecution.TestChrome">
         <methods>
-          <include name="setupBrowser"/>
-          <include name="loginTest"/>
-          <include name="getPropertiesFile"/>
+          <include name="chrome"/>
         </methods>
-      </class> <!-- com.itrace.testcases.LoginTest -->
+      </class> <!-- com.itrace.parallelexecution.TestChrome -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

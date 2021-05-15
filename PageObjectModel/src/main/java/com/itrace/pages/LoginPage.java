@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.itrace.base.DriverFactory;
-import com.itrace.testcases.LocalDriverManager;
+import com.itrace.util.LocalDriverManager;
 
 public class LoginPage {
 	

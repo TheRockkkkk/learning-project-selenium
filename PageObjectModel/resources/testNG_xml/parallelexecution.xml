@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation Test Suite " parallel="tests" thread-count="2">
+	
+	
+	<test name="Automation Test CasesChrome">
+		<classes>
+			<class name="com.itrace.parallelexecution.TestChrome"></class>				
+		</classes>
+	</test>
+	<test name="Automation Test Casesfirefox">
+		<classes>
+			<class name="com.itrace.parallelexecution.Testfirefox"></class>			
+		</classes>
+	</test>
+	
+	
+	<!--
+	<suite name="Automation Test Suite " parallel="tests" thread-count="2">
+	
+	<test name="Login on chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.itrace.testcases.LoginTest"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Login on firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.itrace.testcases.LoginTest"></class>
+		</classes>
+	</test>
+	-->
+
+	<!-- Test -->
+</suite>

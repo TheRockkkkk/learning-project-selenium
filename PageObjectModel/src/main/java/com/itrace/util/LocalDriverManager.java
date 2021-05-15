@@ -1,4 +1,4 @@
-package com.itrace.testcases;
+package com.itrace.util;
 
 import java.util.Properties;
 
