@@ -11,6 +11,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.ITestAnnotation;
 
 import com.itrace.base.TestBase;
+import com.itrace.util.GenericMethods;
 
 public class CustomListeners implements ITestListener, IAnnotationTransformer{
 
@@ -28,7 +29,12 @@ public class CustomListeners implements ITestListener, IAnnotationTransformer{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		
+		System.setProperty("org.uncommons.reportng.escape-output","false");
+		try {
+			GenericMethods.captureScreenshot();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		TestBase.log.debug("Capturing fail screenshot");
 		
 	}

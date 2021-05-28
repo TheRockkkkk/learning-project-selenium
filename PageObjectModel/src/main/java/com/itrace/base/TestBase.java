@@ -52,7 +52,7 @@ public class TestBase {
     	
     	driver = DriverFactory.createInstance(browserName);
 		LocalDriverManager.setWebDriver(driver);
-		GenericMethods gmGenericMethods = new GenericMethods(driver);
+		//GenericMethods gmGenericMethods = new GenericMethods(driver);
 	}
 	
 	    @AfterMethod(alwaysRun = true)

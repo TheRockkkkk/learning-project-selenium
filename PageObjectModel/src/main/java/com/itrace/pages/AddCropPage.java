@@ -18,7 +18,7 @@ public class AddCropPage {
 	By addCropBtn = By.xpath("//button//span[contains(text(),'Add Crop')]/..");
 	By cropNameField = By.xpath("//mat-dialog-content//input[contains(@formcontrolname,'name')]");
 	By shortNameField = By.xpath("//mat-dialog-content//input[contains(@formcontrolname,'shortName')]");
-	By codeField = By.xpath("//mat-dialog-content//input[@formcontrolname='code']");
+	By codeField = By.xpath("//mat-dialog-content//input[@formcontrolname='code88']");
 	By createNewCropBtn = By.xpath("//mat-dialog-content/following-sibling::mat-dialog-actions//button//span[text()='CREATE']/..");
 	By findCropSearchBox = By.xpath("//input[contains(@placeholder, 'Find Crop')]");
 	By elipsesClick = By.xpath("(//mat-icon[text()='more_horiz'])[2]");

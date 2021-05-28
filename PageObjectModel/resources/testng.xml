@@ -3,6 +3,12 @@
 
 <suite name="Automation Test Suite">
 		
+	<listeners>
+	
+		<listener class-name="com.itrace.util.ExtentReport"/>
+
+		
+	</listeners>
 	
 	<test name="Login on chrome">
 		<parameter name="browser" value="chrome" />

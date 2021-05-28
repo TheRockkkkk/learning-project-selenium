@@ -157,7 +157,8 @@ public class GenericMethods {
 	public static void captureScreenshot() throws Exception {
 		try{
 			File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(srcFile, new File("./Screenshots/"+"screenshotName"+".png"));
+			FileUtils.copyFile(srcFile, new File("./Screenshots/"+"screenshotName1"+".png"));
+			//FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")+"./target/surefire-reports/html"+"error"+".png"));
 		}
 		catch(Exception e) {
 			System.out.println("Exception while taking screenshot" + e.getMessage());

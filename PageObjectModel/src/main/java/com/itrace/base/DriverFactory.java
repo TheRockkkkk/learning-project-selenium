@@ -16,10 +16,10 @@ public class DriverFactory {
 	public static WebDriver createInstance(String browserName)  {
 
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", LocalDriverManager.getPropertiesFileObject().getProperty("chrome.driver.path"));
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + LocalDriverManager.getPropertiesFileObject().getProperty("chrome.driver.path"));
 			driver = new ChromeDriver();
 		}else if(browserName.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", LocalDriverManager.getPropertiesFileObject().getProperty("firefox.driver.path"));
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + LocalDriverManager.getPropertiesFileObject().getProperty("firefox.driver.path"));
 			driver = new FirefoxDriver();
 		}	
 		
